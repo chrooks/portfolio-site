@@ -113,10 +113,9 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    intro: "Hello there, my name is"
+    title: "Christopher Brooks."
+    content: "And welcome to my corner of the internet. :)"
     image: /images/hero.svg
     button:
       enable: true
