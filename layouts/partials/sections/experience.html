@@ -1,0 +1,48 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+            {{ range $index, $element := .Site.Params.experience.items }}
+                <div class="experience-container px-3 pt-3 my-5 border">
+                    <div class="pb-2 pt-2 bg-transparent primary-font">
+                        <div class="experience-heading">
+                            <h4>{{ .job }}</h4>
+                            <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                            <div class="pb-1">
+                                <small>{{ .date }}</small>
+                                <span class="px-1">&middot</span>
+                                <small>{{ .location }}</small>
+                                {{ if .info.enable | default true }}
+                                <span class="p-2">
+                                    <span 
+                                        style="cursor: pointer;" 
+                                        data-bs-toggle="tooltip" 
+                                        data-bs-placement="top" 
+                                        data-bs-original-title={{ .info.content | default (print "Working as a " .job " at " .company ) }}
+                                    >
+                                        <i class="fas fa-info-circle fa-xs"></i>
+                                    </span>
+                                </span>
+                                {{ end }}
+                            </div>
+                            {{ if .featuredLink.enable | default false }}
+                            <div class="py-2 featuredLink">
+                                <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
+                                    {{ .featuredLink.name | default "Featured Link" }} 
+                                </a>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <div class="experience-body py-2">
+                            {{ .content | markdownify}}
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
