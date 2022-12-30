@@ -25,7 +25,7 @@ Menus:
     - identifier: gratitude
       name: Gratitude
       title: Gratitude
-      url: /blogs
+      url: /gratitude
       weight: 1
     - identifier: resume
       name: Resume
@@ -53,7 +53,7 @@ Menus:
 params:
   title: "Hugo Profile"
   description: Text about my cool site
-  staticPath: "" # The path to serve the static files from
+  # staticPath: "" # The path to serve the static files from
   favicon: "images/icon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -73,7 +73,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    defaultTheme: "dark" # light
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -101,7 +101,7 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # brandLogo: "fav.png" # Logo for the brand | default is the favicon variable
     brandName: "Christopher Brooks" # Brand name for the brand | default is the title variable
     disableSearch: true
     menus:
@@ -131,6 +131,8 @@ params:
           url: https://github.com/chrooks
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/chrooks
+        - icon: fa fa-envelope
+          url: mailto:brooks.ch@northeastern.edu
       # customIcons:
       #   - icon: images/fav.png
       #     url: "https://example.com"
@@ -214,26 +216,16 @@ params:
 
   # Education
   education:
-    enable: true
+    enable: false
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
-        school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
       - title: "Bachelor of Science in Computer Science"
         school:
-          name: "Massachusetts Institute of Technology"
+          name: "Northeastern University"
           url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+        date: "2019 - present"
+        GPA: "3.2"
         content: |-
           I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
           - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
@@ -243,9 +235,7 @@ params:
             - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
+          enable: false
       - title: "High School"
         school:
           name: "Thomas Jefferson High School for Science and Technology."
@@ -303,7 +293,7 @@ params:
 
       - title: Chrooks.com
         content: |-
-          Personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo-Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling and animations written with [GSAP's ScrollTrigger plugin](https://greensock.com/scrolltrigger/).
+          Personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling and animations written with [GSAP's ScrollTrigger plugin](https://greensock.com/scrolltrigger/).
         image: /images/icon.png
         featured:
           name: Check it out here!
@@ -326,6 +316,9 @@ params:
     content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
     email: brooks.ch@northeastern.edu
     btnName: Email me!
+    socialButtons:
+      github: https://github.com/chrooks
+      linkedin: https://linkedin.com/in/chrooks
 
   footer:
     recentPosts:
