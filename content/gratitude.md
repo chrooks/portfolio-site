@@ -5,7 +5,7 @@ author: Christopher Brooks
 draft: false
 toc: false
 socialShare: false
-image: images/family_cropped.jpg
+image: ../images/family_cropped.jpg
 tags: ["gratitude"]
 ---
 
