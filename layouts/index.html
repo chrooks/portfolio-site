@@ -8,6 +8,7 @@
     {{ $scss := resources.Get "/scss/main.scss" | resources.ToCSS }}
     {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/styles.css">
 {{ end }}
 
 <!-- fontawesome -->

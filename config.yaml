@@ -72,7 +72,7 @@ params:
   customCSS: true
 
   theme:
-    # disableThemeToggle: true
+    disableThemeToggle: true
     defaultTheme: "auto" # dark
 
   font:
@@ -141,7 +141,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/icon.png"
+    image: "/images/headshot.png"
     content: |-
       I am a fourth-year undergraduate student at Northeastern University studying Computer Science with a minor in Africana Studies.
 

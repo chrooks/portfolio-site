@@ -1,15 +1,17 @@
 .navbar {
-    .navbar-brand {
+  .navbar-brand {
+    font-weight: bold;
 
-        font-weight: bold;
-        
-        .navbar-icon {
-            margin-right: 0.2em;
-        }
-
+    .navbar-icon {
+      margin-right: 0.2em;
     }
+  }
 
-    .primary-font {
-        font-family: Inter, sans-serif;
-    }
+  .primary-font {
+    font-family: Inter, sans-serif;
+  }
+
+  .nav-item {
+    margin-left: 0.5em;
+  }
 }

@@ -11,18 +11,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
->
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      media="print" onload="this.media='all'" />
-<noscript>
-  <link
-          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-</noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap" 
+      rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/font.css" media="all">
@@ -47,26 +37,22 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
-
-<link rel="stylesheet" href="/css/style.css">
-
-
 <style>
     :root {
-        --text-color: #343a40;
-        --text-secondary-color: #6c757d;
-        --background-color: #eaedf0;
-        --secondary-background-color: #64ffda1a;
-        --primary-color: #007bff;
-        --secondary-color: #f8f9fa;
+        --text-color: ;
+        --text-secondary-color: ;
+        --background-color: ;
+        --secondary-background-color: ;
+        --primary-color: ;
+        --secondary-color: ;
 
          
-        --text-color-dark: #e4e6eb;
-        --text-secondary-color-dark: #b0b3b8;
-        --background-color-dark: #18191a;
-        --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
-        --secondary-color-dark: #212529;
+        --text-color-dark: ;
+        --text-secondary-color-dark: ;
+        --background-color-dark: ;
+        --secondary-background-color-dark: ;
+        --primary-color-dark: ;
+        --secondary-color-dark: ;
     }
     body {
         font-size: 1rem;
@@ -103,9 +89,19 @@
     }
 </style>
 
+
+
 <meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
 
 
 <script defer src="/fontawesome-5/all-5.15.4.js"></script>
@@ -120,11 +116,7 @@ Christopher Brooks
   
   
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -139,7 +131,7 @@ Christopher Brooks
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
                 <img src="images/icon.png" width="30" height="30"
-                    class="d-inline-block align-top">
+                    class="d-inline-block align-top navbar-icon">
                 Christopher Brooks
                 
             </a>
@@ -222,28 +214,6 @@ Christopher Brooks
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" class="mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" class="mb-2"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    
 
                 </ul>
 
@@ -252,8 +222,9 @@ Christopher Brooks
     </nav>
 </header>
 <div id="content">
-<section id="hero" class="py-5 align-middle">
-    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+<section id="hero" class="align-middle">
+    <div id="particles-js"></div>
+    <div id="hero-content"class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 content " id="primary-font">
                 <span id="hero-intro">
@@ -265,10 +236,10 @@ Christopher Brooks
                 <h3 id="hero-subtitle">
                     
                 </h3>
-                <p class="hero-content" id="hero-text">
+                <p class="hero-text" id="hero-text">
                     And welcome to my corner of the internet.
                 </p>
-                <div class="row">
+                <div id="hero-buttons" class="row">
                     <div class="col-auto h-100">
                         
                         <a href="/resume.pdf" class="btn" ZgotmplZ
@@ -578,7 +549,7 @@ Christopher Brooks
             
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
                 <div class="image d-flex px-5">
-                    <img src="/images/icon.png" class="img-thumbnail mx-auto rounded-circle" alt="">
+                    <img src="/images/headshot.png" class="img-thumbnail mx-auto rounded-circle" alt="">
                 </div>
             </div>
             
@@ -623,7 +594,7 @@ Christopher Brooks
     <div class="container">
         <h3 class="text-center">Experience</h3>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+            <div class="col-sm-12 col-md-8 col-lg-8 pb-5">
             
                 <div class="experience-container px-3 pt-3 my-5 border">
                     <div class="pb-2 pt-2 bg-transparent primary-font">
@@ -717,16 +688,16 @@ Christopher Brooks
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
                             
-                            <span class="badge badge-secondary">React.JS</span>
+                            <span class="badge badge-secondary border">React.JS</span>
                             
-                            <span class="badge badge-secondary">Typescript</span>
+                            <span class="badge badge-secondary border">Typescript</span>
                             
-                            <span class="badge badge-secondary">Chakra UI</span>
+                            <span class="badge badge-secondary border">Chakra UI</span>
                             
-                            <span class="badge badge-secondary">Jest Testing Framework</span>
+                            <span class="badge badge-secondary border">Jest Testing Framework</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">Wordle.Town</h5>
+                        <h5 class="card-title bg-transparent mt-1 py-1">Wordle.Town</h5>
                         <div class="card-text bg-transparent secondary-font">
                             <p>Collaborative effort to implement the game Wordle into open-source remote collaboration app <a href="https://app.covey.town/">Covey.Town</a> for final project of <a href="https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=202210&amp;subj_code_in=CS&amp;crse_numb_in=4530">CS4530: Fundamentals of Software Engineering</a>.</p>
 <p>Responsibilities included:</p>
@@ -768,22 +739,24 @@ interaction functionality.</li>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
                             
-                            <span class="badge badge-secondary">Hugo SSG</span>
+                            <span class="badge badge-secondary border">Hugo SSG</span>
                             
-                            <span class="badge badge-secondary">CSS</span>
+                            <span class="badge badge-secondary border">SCSS/SASS</span>
                             
-                            <span class="badge badge-secondary">JavaScript</span>
+                            <span class="badge badge-secondary border">CSS</span>
                             
-                            <span class="badge badge-secondary">GSAP</span>
+                            <span class="badge badge-secondary border">JavaScript</span>
                             
-                            <span class="badge badge-secondary">Markdown</span>
+                            <span class="badge badge-secondary border">GSAP</span>
                             
-                            <span class="badge badge-secondary">HTML</span>
+                            <span class="badge badge-secondary border">Markdown</span>
+                            
+                            <span class="badge badge-secondary border">HTML</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">Chrooks.com</h5>
+                        <h5 class="card-title bg-transparent mt-1 py-1">Chrooks.com</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Personal portoflio website made with <a href="https://gohugo.io/">Hugo</a> using the <a href="https://github.com/gurusabarish/hugo-profile">Hugo Profile</a> theme complete with custom styling and animations written with <a href="https://greensock.com/scrolltrigger/">GSAP&rsquo;s ScrollTrigger plugin</a>.
+                            Fully responsive personal portoflio website made with <a href="https://gohugo.io/">Hugo</a> using the <a href="https://github.com/gurusabarish/hugo-profile">Hugo Profile</a> theme complete with custom styling written with SCSS and animations written with <a href="https://greensock.com/scrolltrigger/">GSAP&rsquo;s ScrollTrigger plugin</a>.
                         </div>
                     </div>
                     
@@ -862,7 +835,7 @@ interaction functionality.</li>
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2022  All Rights Reserved
+            &copy; 2023  All Rights Reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -878,28 +851,13 @@ interaction functionality.</li>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (document.body.className.includes("dark")) {
-        document.body.classList.remove('dark');
-        localStorage.setItem("pref-theme", 'light');
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
     }
-</script>
-
-
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
 
 </script>
 
@@ -927,6 +885,8 @@ interaction functionality.</li>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="/js/animations.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/js/particles.js"></script>
 
   <section id="search-content" class="py-2">
     <div class="container" id="search-results"></div>
