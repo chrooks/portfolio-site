@@ -1,17 +1,17 @@
 
 /* Default font for body */
 body {
-    font-family: "Lora", serif !important;
+    font-family: "Lato", sans-serif !important;
 }
 
 /* secondary font */
 .secondary-font, #secondary-font {
-    font-family: "Lora", serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* primary font */
 .primary-font, #primary-font {
-    font-family: "Alata", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 /* Default font */

@@ -73,7 +73,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    defaultTheme: "light" # dark
+    defaultTheme: "auto" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -82,21 +82,21 @@ params:
     textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+    textColor: #000
+    secondaryTextColor: #E6AF2E
+    backgroundColor: #fff
+    secondaryBackgroundColor: #F5F5F5
+    primaryColor: #274C77
+    secondaryColor: #92828D
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+    darkmode:
+      textColor: #fff
+      secondaryTextColor: #E6AF2E
+      backgroundColor: #1a192a
+      secondaryBackgroundColor: #274C77
+      primaryColor: #ADCAD6
+      secondaryColor: #41BBD9
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -223,27 +223,23 @@ params:
       - title: "Bachelor of Science in Computer Science"
         school:
           name: "Northeastern University"
-          url: "https://example.org"
+          url: "https://www.northeastern.edu/"
         date: "2019 - present"
         GPA: "3.2"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          Majoring in Computer Science, minoring in Africana Studies.  
+          [Former Varsity Track & Field athlete](https://nuhuskies.com/sports/mens-track-and-field/roster/christopher-brooks/6303).  
+          Former President & Current member of the Northeastern Black Student Association.  
+          Member of the Black Engineering Student Society (BESS).
         featuredLink:
           enable: false
       - title: "High School"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
+          name: "St. Peter's Preparatory School"
+          url: "https://spprep.org/"
+        GPA: "3.9"
         featuredLink:
-          enable: true
-          url: "https://example.com"
+          enable: false
 
   # Achievements
   achievements:
@@ -293,13 +289,14 @@ params:
 
       - title: Chrooks.com
         content: |-
-          Personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling and animations written with [GSAP's ScrollTrigger plugin](https://greensock.com/scrolltrigger/).
+          Fully responsive personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling written with SCSS and animations written with [GSAP's ScrollTrigger plugin](https://greensock.com/scrolltrigger/).
         image: /images/icon.png
         featured:
           name: Check it out here!
           link: https://chrooks.com/
         badges:
           - "Hugo SSG"
+          - "SCSS/SASS"
           - "CSS"
           - "JavaScript"
           - "GSAP"

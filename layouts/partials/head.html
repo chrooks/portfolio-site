@@ -7,18 +7,8 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
->
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      media="print" onload="this.media='all'" />
-<noscript>
-  <link
-          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-</noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap" 
+      rel="stylesheet">
 
 <!-- font configuration -->
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/font.css" media="all">
@@ -40,27 +30,23 @@
 <!-- theme -->
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/theme.css" media="all">
 
-<!-- Custom Styles -->
-{{ if .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/style.css">
-{{ end }}
 
 <style>
     :root {
-        --text-color: {{ .Site.Params.color.textColor | default "#343a40" }};
-        --text-secondary-color: {{ .Site.Params.color.secondaryTextColor | default "#6c757d" }};
-        --background-color: {{ .Site.Params.color.backgroundColor | default "#eaedf0" }};
-        --secondary-background-color: {{ .Site.Params.color.secondaryBackgroundColor | default "#64ffda1a" }};
-        --primary-color: {{ .Site.Params.color.primaryColor | default "#007bff" }};
-        --secondary-color: {{ .Site.Params.color.secondaryColor | default "#f8f9fa" }};
+        --text-color: {{ .Site.Params.color.textColor }};
+        --text-secondary-color: {{ .Site.Params.color.secondaryTextColor }};
+        --background-color: {{ .Site.Params.color.backgroundColor }};
+        --secondary-background-color: {{ .Site.Params.color.secondaryBackgroundColor }};
+        --primary-color: {{ .Site.Params.color.primaryColor }};
+        --secondary-color: {{ .Site.Params.color.secondaryColor }};
 
         /* dark mode colors */
-        --text-color-dark: {{ .Site.Params.color.darkmode.textColor | default "#e4e6eb" }};
-        --text-secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryTextColor | default "#b0b3b8" }};
-        --background-color-dark: {{ .Site.Params.color.darkmode.backgroundColor | default "#18191a" }};
-        --secondary-background-color-dark: {{ .Site.Params.color.darkmode.secondaryBackgroundColor | default "#212529" }};
-        --primary-color-dark: {{ .Site.Params.color.darkmode.primaryColor | default "#ffffff" }};
-        --secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryColor | default "#212529" }};
+        --text-color-dark: {{ .Site.Params.color.darkmode.textColor }};
+        --text-secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryTextColor }};
+        --background-color-dark: {{ .Site.Params.color.darkmode.backgroundColor }};
+        --secondary-background-color-dark: {{ .Site.Params.color.darkmode.secondaryBackgroundColor }};
+        --primary-color-dark: {{ .Site.Params.color.darkmode.primaryColor }};
+        --secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryColor }};
     }
     body {
         font-size: {{ .Site.Params.font.fontSize | default "1rem" }};
@@ -96,3 +82,5 @@
         background-color: var(--background-color);
     }
 </style>
+
+
