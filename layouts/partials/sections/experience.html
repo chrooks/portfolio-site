@@ -5,12 +5,12 @@
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 pb-5">
             {{ range $index, $element := .Site.Params.experience.items }}
-                <div class="experience-container px-3 pt-3 my-5 border">
-                    <div class="pb-2 pt-2 bg-transparent primary-font">
-                        <div class="experience-heading">
-                            <h4>{{ .job }}</h4>
+                <div class="card rounded shadow px-3 pt-2 my-4 ">
+                    <div class="experience-content py-2 px-3">
+                        <div class="experience-heading py-2">
+                            <h4 class="card-title">{{ .job }}</h4>
                             <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
-                            <div class="pb-1">
+                            <div class="pb-1 card-subtitle">
                                 <small>{{ .date }}</small>
                                 <span class="px-1">&middot</span>
                                 <small>{{ .location }}</small>
@@ -35,7 +35,7 @@
                             </div>
                             {{ end }}
                         </div>
-                        <div class="experience-body py-2">
+                        <div class="experience-body">
                             {{ .content | markdownify}}
                         </div>
                     </div>

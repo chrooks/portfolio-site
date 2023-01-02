@@ -41,12 +41,15 @@ section:nth-child(even) {
   left: 10%;
   font-family: Inter, sans-serif; }
 
+#hero-content #hero-title {
+  color: white; }
+
 #hero-content #hero-title,
 #hero-content #hero-intro,
 #hero-content #hero-subtitle,
 #hero-content #hero-text {
   font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: white; }
 
 .card {

@@ -22,11 +22,11 @@ markup:
 
 Menus:
   main:
-    - identifier: gratitude
-      name: Gratitude
-      title: Gratitude
-      url: /gratitude
-      weight: 1
+    # - identifier: gratitude
+    #   name: Gratitude
+    #   title: Gratitude
+    #   url: /gratitude
+    #   weight: 1
     - identifier: resume
       name: Resume
       title: Resume
@@ -51,7 +51,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
+  title: "Chrooks.com"
   description: Text about my cool site
   # staticPath: "" # The path to serve the static files from
   favicon: "images/icon.png"
@@ -117,8 +117,8 @@ params:
     enable: true
     intro: "Hello there, my name is"
     title: "Christopher Brooks."
-    content: "And welcome to my corner of the internet."
-    image: /images/fav.png
+    content: "And welcome to my personal billboard in cyberspace."
+    image: /images/headshot.png
     button:
       enable: true
       name: "Resume"
@@ -141,7 +141,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/headshot.png"
+    # image: "/images/headshot.png"
     content: |-
       I am a fourth-year undergraduate student at Northeastern University studying Computer Science with a minor in Africana Studies.
 
@@ -180,9 +180,9 @@ params:
           enable: false
         content: |-
           Worked under the direction of [Dr. Alexandra To](https://www.alexandrato.com/) to:
-          - Coordinate with group of 3 other researchers, contributing to the ideation and design of game prototype “myPWI”.
-          - Author short paper [published in the Association for Computing Machinery](https://dl.acm.org/doi/abs/10.1145/3472538.3472585).
-          - Lead weekly lab stand-up meetings and delegated tasks to junior lab members.
+            - Coordinate with group of 3 other researchers, contributing to the ideation and design of game prototype “myPWI”.
+            - Author short paper [published in the Association for Computing Machinery](https://dl.acm.org/doi/abs/10.1145/3472538.3472585).
+            - Lead weekly lab stand-up meetings and delegated tasks to junior lab members.
 
       - job: "Platform Software Engineering Co-Op"
         company: "Medtronic"

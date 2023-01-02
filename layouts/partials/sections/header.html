@@ -24,17 +24,15 @@
 
 <!-- Navbar -->
 <header>
-    <nav class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
+    <nav class="pt-3 navbar navbar-expand-lg fixed-top shadow ">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL | relURL }}">
                 {{ if or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo) }}
                 <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
                     class="d-inline-block align-top navbar-icon">
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
-                {{ else }}
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ end }}
+                <span class="brand-text">{{ .Site.Params.navbar.brandName | default .Site.Params.title }}</span>
             </a>
 
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}
@@ -57,7 +55,7 @@
                 <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
                     {{ if not (.Site.Params.navbar.disableSearch | default false) }}
                         <li class="nav-item navbar-text d-block d-md-none">
-                            <div class="nav-link">
+                            <div class="nav-link shadow">
                                 <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder="Search ..." aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>

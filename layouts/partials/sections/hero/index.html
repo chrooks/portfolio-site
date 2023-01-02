@@ -1,9 +1,18 @@
 {{ if .Site.Params.hero.enable | default false }}
-<section id="hero" class="align-middle">
-    <div id="particles-js"></div>
-    <div id="hero-content"class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+<section id="hero" class="d-flex justify-content-center align-items-center py-5">
+    <div id="hero-content"class="px-3 px-sm-5 px-md-5 px-lg-0">
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 image px-5 px-md-5 px-lg-0">
+                        <img src="{{ .Site.Params.hero.image }}" 
+                            class="img-thumbnail align-top mx-auto rounded-circle" 
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="hero-txt col-sm-12 col-md-12 col-lg-7 text-center mt-5 ">
                 <span id="hero-intro">
                     {{ .Site.Params.hero.intro }}
                 </span>
@@ -13,16 +22,18 @@
                 <h3 id="hero-subtitle">
                     {{ .Site.Params.hero.subtitle }}
                 </h3>
-                <p class="hero-text" id="hero-text">
+                <div class="hero-text">
                     {{ .Site.Params.hero.content | markdownify }}
-                </p>
-                <div id="hero-buttons" class="row">
-                    <div class="col-auto h-100">
+                </div>
+                <div id="hero-buttons" class="row mt-3 justify-content-center">
+                    <div class="col-auto h-100 ">
                         {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
-                          {{ end }}>
+                        <a href="{{ .Site.Params.hero.button.url }}" 
+                            class="btn" 
+                            {{ cond .Site.Params.hero.button.download "download" "" }}
+                            {{ if .Site.Params.hero.button.newPage | default true }}
+                              target="_blank"
+                            {{ end }}>
                             {{ .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}
@@ -32,16 +43,6 @@
                     </div>
                 </div>
             </div>
-            {{/*  <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image {{ if .Site.Params.animate }}animate{{ end }} px-5 px-md-5 px-lg-0 text-center">
-                        <img src="{{ .Site.Params.hero.image }}" 
-                            class="img-thumbnail mx-auto" 
-                            alt=""
-                        >
-                    </div>
-                </div>
-            </div>  */}}
         </div>
     </div>
     <div class="hero-bottom-svg d-md-block d-lg-block d-none">
