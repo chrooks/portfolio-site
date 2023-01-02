@@ -60,7 +60,12 @@ section:nth-child(even) {
   font-weight: bold;
   color: #f5f5f5;
   background-color: #e6af2e;
-  translate: 0 -5%; }
+  translate: 0 -5%;
+  transition: all 0.4s ease-in; }
+
+.navbar .navbar-brand .brand-text {
+  padding: 0.5em 0.3em;
+  border-radius: 0.8rem; }
 
 @media (max-width: 767px) {
   .navbar .navbar-brand .brand-text {
@@ -98,6 +103,15 @@ section:nth-child(even) {
 
 #hero-content a.btn.social-icon {
   margin-top: 1em; }
+
+#hero-content .hero-txt {
+  padding: 2em 0;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#hero-content .image img {
+  border: rgba(0, 0, 0, 0.5) 2px solid;
+  margin-top: 3.5em; }
 
 #hero-content .hero-txt,
 #hero-content .image {

@@ -22,7 +22,7 @@
 <meta property="og:title" content="Christopher Brooks" />
 <meta property="og:description" content="Text about my cool site" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://chrooks.com/" /><meta property="og:site_name" content="Hugo Profile" />
+<meta property="og:url" content="https://chrooks.com/" /><meta property="og:site_name" content="Chrooks.com" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -125,15 +125,15 @@ Christopher Brooks
 
 
 <header>
-    <nav class="pt-3 navbar navbar-expand-lg ">
+    <nav class="pt-3 navbar navbar-expand-lg fixed-top shadow ">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
                 <img src="images/icon.png" width="30" height="30"
                     class="d-inline-block align-top navbar-icon">
-                Christopher Brooks
                 
+                <span class="brand-text">Christopher Brooks</span>
             </a>
 
             
@@ -195,16 +195,6 @@ Christopher Brooks
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/gratitude" title="Gratitude">
-                            
-                            Gratitude
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
                         <a class="nav-link" href="/resume.pdf" title="Resume">
                             
                             Resume
@@ -222,11 +212,21 @@ Christopher Brooks
     </nav>
 </header>
 <div id="content">
-<section id="hero" class="align-middle">
-    <div id="particles-js"></div>
-    <div id="hero-content"class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content " id="primary-font">
+<div id="particles-js"></div>
+<section id="hero" class="d-flex justify-content-center align-items-center py-5">
+    <div id="hero-content"class="px-3 px-sm-5 px-md-5 px-lg-0">
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 image px-5 px-md-5 px-lg-0">
+                        <img src="/images/headshot.png" 
+                            class="img-thumbnail align-top mx-auto rounded-circle" 
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="hero-txt col-sm-12 col-md-12 col-lg-7 text-center mt-5 ">
                 <span id="hero-intro">
                     Hello there, my name is
                 </span>
@@ -236,21 +236,25 @@ Christopher Brooks
                 <h3 id="hero-subtitle">
                     
                 </h3>
-                <p class="hero-text" id="hero-text">
-                    And welcome to my corner of the internet.
-                </p>
-                <div id="hero-buttons" class="row">
-                    <div class="col-auto h-100">
+                <div class="hero-text">
+                    And welcome to my personal billboard in cyberspace.<br>
+Since you&rsquo;re here, why not get know me a little :)
+                </div>
+                <div id="hero-buttons" class="row mt-3 justify-content-center">
+                    <div class="col-auto h-100 ">
                         
-                        <a href="/resume.pdf" class="btn" ZgotmplZ
-			  
-                          target="_blank"
-                          >
+                        <a href="/resume.pdf" 
+                            class="btn" 
+                            ZgotmplZ
+                            
+                              target="_blank"
+                            >
                             Resume
                         </a>
                         
                     </div>
-                    <div class="col-auto px-0 h-100"><span id="loading-icons" style="display: block;">
+                    <div class="col-auto px-0 h-100"><span id="loading-icons" 
+    style="display: block;">
     
     <span class="px-1">
         <a href="https://github.com/chrooks" target="_blank" class="btn social-icon">
@@ -275,7 +279,6 @@ Christopher Brooks
 </span></div>
                 </div>
             </div>
-            
         </div>
     </div>
     <div class="hero-bottom-svg d-md-block d-lg-block d-none">
@@ -542,16 +545,10 @@ Christopher Brooks
     </div>
 </section>
 
-<section id="about" class="py-0 py-sm-5">
-    <div class="container bg-transparent">
-        <h3 class="text-center bg-transparent">About Me</h3>
-        <div class="bg-transparent row justify-content-center px-3 py-5">
-            
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="/images/headshot.png" class="img-thumbnail mx-auto rounded-circle" alt="">
-                </div>
-            </div>
+<section id="about" class="py-5 py-sm-5">
+    <div class="container">
+        <h3 class="text-center">About Me</h3>
+        <div class="row justify-content-center px-3 py-3 mb-4">
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 <p>I am a fourth-year undergraduate student at Northeastern University studying Computer Science with a minor in Africana Studies.</p>
@@ -596,12 +593,12 @@ Christopher Brooks
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 pb-5">
             
-                <div class="experience-container px-3 pt-3 my-5 border">
-                    <div class="pb-2 pt-2 bg-transparent primary-font">
-                        <div class="experience-heading">
-                            <h4>Khoury College Research Assistant</h4>
+                <div class="card rounded shadow px-3 pt-2 my-4 ">
+                    <div class="experience-content py-2 px-3">
+                        <div class="experience-heading py-2">
+                            <h4 class="card-title">Khoury College Research Assistant</h4>
                             <a href="https://www.khoury.northeastern.edu/" target="_blank">Northeastern University</a>
-                            <div class="pb-1">
+                            <div class="pb-1 card-subtitle">
                                 <small>Sep. 2020 - Dec 2022</small>
                                 <span class="px-1">&middot</span>
                                 <small>Boston, MA</small>
@@ -609,7 +606,7 @@ Christopher Brooks
                             </div>
                             
                         </div>
-                        <div class="experience-body py-2">
+                        <div class="experience-body">
                             <p>Worked under the direction of <a href="https://www.alexandrato.com/">Dr. Alexandra To</a> to:</p>
 <ul>
 <li>Coordinate with group of 3 other researchers, contributing to the ideation and design of game prototype “myPWI”.</li>
@@ -621,12 +618,12 @@ Christopher Brooks
                     </div>
                 </div>
             
-                <div class="experience-container px-3 pt-3 my-5 border">
-                    <div class="pb-2 pt-2 bg-transparent primary-font">
-                        <div class="experience-heading">
-                            <h4>Platform Software Engineering Co-Op</h4>
+                <div class="card rounded shadow px-3 pt-2 my-4 ">
+                    <div class="experience-content py-2 px-3">
+                        <div class="experience-heading py-2">
+                            <h4 class="card-title">Platform Software Engineering Co-Op</h4>
                             <a href="https://www.medtronic.com/covidien/en-us/robotic-assisted-surgery/hugo-ras-system.html" target="_blank">Medtronic</a>
-                            <div class="pb-1">
+                            <div class="pb-1 card-subtitle">
                                 <small>Jan. 2022 - Jun. 2022</small>
                                 <span class="px-1">&middot</span>
                                 <small>Boston, MA</small>
@@ -634,7 +631,7 @@ Christopher Brooks
                             </div>
                             
                         </div>
-                        <div class="experience-body py-2">
+                        <div class="experience-body">
                             <ul>
 <li>Developed Python and Bash scripts to collect, parse, and display KPI and stress test data for diagnostic purposes.</li>
 <li>Wrote and debugged unit tests in C++ using GoogleTest framework.</li>
@@ -645,12 +642,12 @@ Christopher Brooks
                     </div>
                 </div>
             
-                <div class="experience-container px-3 pt-3 my-5 border">
-                    <div class="pb-2 pt-2 bg-transparent primary-font">
-                        <div class="experience-heading">
-                            <h4>President</h4>
+                <div class="card rounded shadow px-3 pt-2 my-4 ">
+                    <div class="experience-content py-2 px-3">
+                        <div class="experience-heading py-2">
+                            <h4 class="card-title">President</h4>
                             <a href="https://neu.campuslabs.com/engage/organization/nbsa" target="_blank">Northeastern Black Student Association</a>
-                            <div class="pb-1">
+                            <div class="pb-1 card-subtitle">
                                 <small>May 2020 - May 2021</small>
                                 <span class="px-1">&middot</span>
                                 <small>Boston, MA</small>
@@ -658,7 +655,7 @@ Christopher Brooks
                             </div>
                             
                         </div>
-                        <div class="experience-body py-2">
+                        <div class="experience-body">
                             <ul>
 <li>Presided over executive board of 10 other student leaders to facilitate the coordination of several large-scale events and weekly meetings for a general body of over 300 people.</li>
 <li>Collaborated with 12 other student organization presidents to form initiative <a href="https://sites.google.com/view/blackvoicesmatter/home">&ldquo;BlackVoicesMatterNEU&rdquo;</a>.</li>
@@ -678,28 +675,56 @@ Christopher Brooks
 <section id="projects" class="py-5">
     <div class="container">
         <h3 class="text-center">Projects</h3>
-        <div class="row justify-content-center px-3 px-md-5">
+        <div class="row row-cols-1 row-cols-lg-2  g-4">
             
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Wordle.Town">
+            <div class="col">
+                <div class="card my-3 mx-auto" title="Wordle.Town">
                     <div class="card-head">
                         <img class="card-img-top" src="/images/projects/Wordle_2022_Icon.png" alt="Wordle.Town">
                     </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary border">React.JS</span>
-                            
-                            <span class="badge badge-secondary border">Typescript</span>
-                            
-                            <span class="badge badge-secondary border">Chakra UI</span>
-                            
-                            <span class="badge badge-secondary border">Jest Testing Framework</span>
-                            
+                    <div class="card-body p-3">
+
+                        <div class="row">
+                            <div class="pb-2">
+                                
+                                <span class="badge badge-secondary border">React.JS</span>
+                                
+                                <span class="badge badge-secondary border">Typescript</span>
+                                
+                                <span class="badge badge-secondary border">Chakra UI</span>
+                                
+                                <span class="badge badge-secondary border">Jest Testing Framework</span>
+                                
+                            </div>
                         </div>
-                        <h5 class="card-title bg-transparent mt-1 py-1">Wordle.Town</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Collaborative effort to implement the game Wordle into open-source remote collaboration app <a href="https://app.covey.town/">Covey.Town</a> for final project of <a href="https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=202210&amp;subj_code_in=CS&amp;crse_numb_in=4530">CS4530: Fundamentals of Software Engineering</a>.</p>
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2 py-1">Wordle.Town</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                
+                                    <a class="btn btn-sm border-light" href="https://coveytown-wordle.netlify.app/" target="_blank">
+                                        Check it out here!
+                                    </a>
+                                
+                                
+                                    
+                                    <span class="m-1 mx-2 float-end">
+                                        <a href="https://github.com/neu-cs4530/fall-22-team-project-group-307" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </span>
+                                    
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="card-text">
+                                <p>Collaborative effort to implement the game Wordle into open-source remote collaboration app <a href="https://app.covey.town/">Covey.Town</a> for final project of <a href="https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=202210&amp;subj_code_in=CS&amp;crse_numb_in=4530">CS4530: Fundamentals of Software Engineering</a>.</p>
 <p>Responsibilities included:</p>
 <ul>
 <li>Collaborating with a team of 4 to design, plan, implement, test, and present a new feature to open-source project of over 16,000 lines of code, Covey.Town using test-driven design and object-oriented programming principles.</li>
@@ -708,80 +733,77 @@ interaction functionality.</li>
 <li>Conducting extensive unit testing using Jest framework.</li>
 </ul>
 
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/neu-cs4530/fall-22-team-project-group-307" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://coveytown-wordle.netlify.app/" target="_blank">
-                                Check it out here!
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Chrooks.com">
+            <div class="col">
+                <div class="card my-3 mx-auto" title="Chrooks.com">
                     <div class="card-head">
                         <img class="card-img-top" src="/images/icon.png" alt="Chrooks.com">
                     </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary border">Hugo SSG</span>
-                            
-                            <span class="badge badge-secondary border">SCSS/SASS</span>
-                            
-                            <span class="badge badge-secondary border">CSS</span>
-                            
-                            <span class="badge badge-secondary border">JavaScript</span>
-                            
-                            <span class="badge badge-secondary border">GSAP</span>
-                            
-                            <span class="badge badge-secondary border">Markdown</span>
-                            
-                            <span class="badge badge-secondary border">HTML</span>
-                            
+                    <div class="card-body p-3">
+
+                        <div class="row">
+                            <div class="pb-2">
+                                
+                                <span class="badge badge-secondary border">Hugo SSG</span>
+                                
+                                <span class="badge badge-secondary border">SCSS/SASS</span>
+                                
+                                <span class="badge badge-secondary border">CSS</span>
+                                
+                                <span class="badge badge-secondary border">JavaScript</span>
+                                
+                                <span class="badge badge-secondary border">GSAP</span>
+                                
+                                <span class="badge badge-secondary border">Markdown</span>
+                                
+                                <span class="badge badge-secondary border">HTML</span>
+                                
+                            </div>
                         </div>
-                        <h5 class="card-title bg-transparent mt-1 py-1">Chrooks.com</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Fully responsive personal portoflio website made with <a href="https://gohugo.io/">Hugo</a> using the <a href="https://github.com/gurusabarish/hugo-profile">Hugo Profile</a> theme complete with custom styling written with SCSS and animations written with <a href="https://greensock.com/scrolltrigger/">GSAP&rsquo;s ScrollTrigger plugin</a>.
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2 py-1">Chrooks.com</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                
+                                    <a class="btn btn-sm border-light" href="https://chrooks.com/" target="_blank">
+                                        Check it out here!
+                                    </a>
+                                
+                                
+                                    
+                                    <span class="m-1 mx-2 float-end">
+                                        <a href="https://github.com/chrooks/portfolio-site" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </span>
+                                    
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="card-text">
+                                Fully responsive personal portoflio website made with <a href="https://gohugo.io/">Hugo</a> using the <a href="https://github.com/gurusabarish/hugo-profile">Hugo Profile</a> theme complete with custom styling written with SCSS and animations written with <a href="https://greensock.com/scrolltrigger/">GSAP&rsquo;s ScrollTrigger plugin</a>.
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/chrooks/portfolio-site" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://chrooks.com/" target="_blank">
-                                Check it out here!
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            
         </div>
+
+            
+            
+
     </div>
 </section>
 

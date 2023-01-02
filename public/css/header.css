@@ -94,7 +94,7 @@ li > .dropdown-toggle:focus {
   margin-bottom: 10px;
 }
 
-#search-results > .card
+#search-results > .card :hover {
   border-radius: 1rem;
   background-color: var(--background-color);
   transition: 0.2s;
