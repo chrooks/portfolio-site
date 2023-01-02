@@ -133,6 +133,17 @@ section {
     }
   }
 
+  .hero-txt {
+    padding: 2em 0;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .image img {
+    border: rgba(0, 0, 0, 0.5) 2px solid;
+    margin-top: 3.5em;
+  }
+
   .hero-txt,
   .image {
     z-index: 1;
