@@ -117,7 +117,9 @@ params:
     enable: true
     intro: "Hello there, my name is"
     title: "Christopher Brooks."
-    content: "And welcome to my personal billboard in cyberspace."
+    content: |- 
+      And welcome to my personal billboard in cyberspace.  
+      Since you're here, why not get know me a little :)
     image: /images/headshot.png
     button:
       enable: true
