@@ -54,7 +54,7 @@ params:
   title: "Chrooks.com"
   description: Text about my cool site
   # staticPath: "" # The path to serve the static files from
-  favicon: "images/icon.png"
+  favicon: "images/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -117,9 +117,9 @@ params:
     enable: true
     intro: "Hello there, my name is"
     title: "Christopher Brooks."
-    content: |- 
+    content: |-
       And welcome to my personal billboard in cyberspace.  
-      Since you're here, why not get know me a little :)
+      Since you're here, why not get know me?
     image: /images/headshot.png
     button:
       enable: true
@@ -269,41 +269,36 @@ params:
     items:
       - title: Wordle.Town
         content: |-
-          Collaborative effort to implement the game Wordle into open-source remote collaboration app [Covey.Town](https://app.covey.town/) for final project of [CS4530: Fundamentals of Software Engineering](https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=202210&subj_code_in=CS&crse_numb_in=4530). 
-
-          Responsibilities included:
-            - Collaborating with a team of 4 to design, plan, implement, test, and present a new feature to open-source project of over 16,000 lines of code, Covey.Town using test-driven design and object-oriented programming principles.
-            - Implementing backend game logic in Typescript and wrote user interface in React using Chakra UI to extend preexisting user
-            interaction functionality.
-            - Conducting extensive unit testing using Jest framework.
-        image: /images/projects/Wordle_2022_Icon.png
+          Collaborative effort to implement the game Wordle into the open-source remote collaboration platform [Covey.Town](https://app.covey.town/) as the final project for my [Fundamentals of Software Engineering class](https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=202210&subj_code_in=CS&crse_numb_in=4530). We were in charge of developing, proposing, planning, implementing, testing, and delivering a new feature to Covey.Town utilizing test-driven design and object-oriented programming principles. The game logic was written in TypeScript on the backend, and the user interface was built in React utilizing Chakra UI. The Jest testing framework was used for unit testing.
+        image: /images/projects/wordle_icon.png
         featured:
-          name: Check it out here!
+          name: Demo
           link: https://coveytown-wordle.netlify.app/
         badges:
           - "React.JS"
           - "Typescript"
           - "Chakra UI"
           - "Jest Testing Framework"
+          - Git
+          - Netlify
         links:
           - icon: fab fa-github
             url: https://github.com/neu-cs4530/fall-22-team-project-group-307
 
       - title: Chrooks.com
         content: |-
-          Fully responsive personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling written with SCSS and animations written with [GSAP's ScrollTrigger plugin](https://greensock.com/scrolltrigger/).
-        image: /images/icon.png
+          Fully responsive personal portoflio website made with [Hugo](https://gohugo.io/) using the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme complete with custom styling written and animations written with SCSS.
+        image: /images/fav.png
         featured:
-          name: Check it out here!
-          link: https://chrooks.com/
         badges:
-          - "Hugo SSG"
+          - "Hugo"
           - "SCSS/SASS"
           - "CSS"
           - "JavaScript"
-          - "GSAP"
           - "Markdown"
           - "HTML"
+          - Git
+          - Netlify
         links:
           - icon: fab fa-github
             url: https://github.com/chrooks/portfolio-site

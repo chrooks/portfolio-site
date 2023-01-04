@@ -3,6 +3,7 @@
 
 $bg-primary: #f5f5f5;
 $bg-secondary: #1a192a;
+$bg-secondary-light: #302e4d;
 $text-primary: #274c77;
 $text-secondary: #f5f5f5;
 $text-tertiary: #e6af2e;
@@ -31,12 +32,12 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-weight: bold;
   transition: all $button-transition-duration ease-in !important;
 
   &:hover {
     background-color: $text-tertiary !important;
     color: white;
-    font-weight: bold;
     translate: 0 -5%;
   }
 }
@@ -216,10 +217,23 @@ section {
     color: $text-secondary;
     width: 75%;
 
-    .card-img-top {
-      width: 100%;
-      object-fit: cover;
+    .badge {
+      background-color: $link-primary;
+      color: $bg-secondary;
     }
+
+    .card-head {
+      background-color: $bg-secondary-light;
+    }
+
+    .card-img-top {
+      max-width: 70%;
+      height: auto;
+      object-fit: cover;
+      background-color: none;
+    }
+
+    
     .card-title {
       font-weight: bold;
     }
@@ -236,6 +250,7 @@ section {
         background-color: $link-primary;
         padding: 0 0.3em;
         color: $text-secondary;
+        border-radius: 0.5rem;
         &:hover {
           background-color: $text-tertiary;
           text-decoration: underline;
