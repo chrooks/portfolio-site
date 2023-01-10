@@ -256,7 +256,7 @@ section {
         &:hover {
           background-color: $text-tertiary;
           text-decoration: underline;
-          transition: all $button-transition-duration ease-in;
+          transition: all $btn-duration ease-in;
         }
       }
 
@@ -315,7 +315,7 @@ section {
         &:hover {
           background-color: $text-tertiary;
           text-decoration: underline;
-          transition: all $button-transition-duration ease-in;
+          transition: all $btn-duration ease-in;
         }
       }
     }
