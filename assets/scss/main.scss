@@ -188,12 +188,12 @@ section {
       }
       a {
         background-color: $link-primary;
+        border-radius: 0.5rem;
         padding: 0 0.3em;
         color: $text-secondary;
         &:hover {
           background-color: $text-tertiary;
           text-decoration: underline;
-          border-radius: 2px;
           transition: all $button-transition-duration ease-in;
         }
       }
@@ -254,7 +254,6 @@ section {
         &:hover {
           background-color: $text-tertiary;
           text-decoration: underline;
-          border-radius: 2px;
           transition: all $button-transition-duration ease-in;
         }
       }
